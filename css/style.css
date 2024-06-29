@@ -1,3 +1,46 @@
+header {
+  position: relative;
+  background-color: #f6f3ee;
+  padding: 10px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.css-box-shadow {
+  /*start ------------*/
+  width: [object Object]px;
+  height: [object Object]px;
+  background: #F8F8F8;
+  border: solid #BDBDBD 1px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav>ul {
+  display: inline-block width:100% list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
 body {
   background-color: #f8f4f4;
   font-family: "open sans";
@@ -10,32 +53,81 @@ body {
   color: #050404;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.4;
-}
-
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2em
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 600;
+  font-size: 1.5em
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 1.2em
 }
 
-h4 {
-  font-size: 1.35em;
-  font-weight: 300;
+ul,
+ol {
+  margin: 1em 0;
+  padding-left: 40px
 }
+
+p,
+figure {
+  margin: 1em 0
+}
+
+a img {
+  border: none
+}
+
+sup,
+sub {
+  line-height: 0
+}
+
+
+main {
+  padding-top: 133px;
+}
+
+#index.html {
+  box-sizing: border-box;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.5
+}
+
+
+#hero {
+  box-sizing: border-box;
+  background-color: #f6f3ee;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /* Centers text */
+}
+
+#about.html {
+  box-sizing: border-box;
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /* Centers text */
+}
+
+#wealthwave.html {
+  box-sizing: border-box;
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  /* Centers text */
+}
+
 
 .button {
   display: inline-block;
@@ -63,4 +155,9 @@ h4 {
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
 }
