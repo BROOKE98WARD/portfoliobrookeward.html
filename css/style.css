@@ -15,9 +15,6 @@ header {
 }
 
 .css-box-shadow {
-  /*start ------------*/
-  width: [object Object]px;
-  height: [object Object]px;
   background: #F8F8F8;
   border: solid #BDBDBD 1px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -26,7 +23,8 @@ header {
 }
 
 nav>ul {
-  display: inline-block width:100% list-style-type: none;
+  display: inline-block;
+  width: 100% list-style-type: none;
   padding: 0;
 }
 
