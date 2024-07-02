@@ -14,11 +14,26 @@
 
 <body>
     <header>
-        <li><a href="about.html">About me</a></li>
-        <li><a href="project.html">Project 1</a></li>
-        <li><a href="#contact">Contact me</a></li>
-
-
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html" class="logo">
+                    <img class="logo" src="img/logo.svg" alt="logo" /></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="#contact" onclick="menuToggle()">Contact</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
         <div>
@@ -33,8 +48,8 @@
                 <h2>My Work </h2>
                 <div></div>
                 <div>
-                    <img src="./img/branding-money-saving.png" alt=branding>
-                    <h3>Wealth Wave</h3>
+                    <img src="./img/branding-money-saving.png" alt="branding">
+                    <h3>wealth wave </h3>
                     <p> WEALTHWAVE is a money saving tool that will allow
                         you to save money easily and faster. I was responsible
                         for both the UX and UI design on this project. I created paper sketches, and used figma to bring
@@ -45,6 +60,7 @@
 
                 </div>
             </div>
+        </div>
     </main>
     <footer>
         <div>

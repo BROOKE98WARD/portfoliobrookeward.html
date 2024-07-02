@@ -13,125 +13,150 @@
     rel="stylesheet">
 </head>
 
+
 <body>
-  <header>
-    <header id="navigation">
-      <div class="container clear">
+  <main>
+    <header>
+      <div class="container">
         <div class="navtoggle" id="myNavtoggle">
-          <img class="logo" src="img/logo.svg" alt="logo">
-          <div class="menu">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-       </div>
-     </div>
-   </nav>
-</header>
-
-    <main>
-      <div id="hero">
-        <div class="container"></div>
-        <h1>Hi, my name is Brooke Ward.<span>
-            I'm a UX/UI researcher and designer</span>
-          <p>I have a passion for design! I love watching an idea go from paper sketches, all the way to polished
-            mockups!
-          </p>
-      </div>
-
-      <div id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-          <img src="./img/branding-money-saving.png" alt="Project 1" />
-
-          <h3>Wealth Wave</h3>
-          <p>WEALTHWAVE is a money saving tool that will allow
-            you to save money easily and faster. I was responsible
-            for both the UX and UI design on this project. I created paper sketches, and used figma to bring them to
-            life.
-          </p>
-        </div>
-
-        <div class="project">
-          <img src="./img/location-based-nav.png" alt="Project 2" />
-          <h3>Navigational app</h3>
-          <p>Description of project 2</p>
-        </div>
-
-        <div class="project">
-          <img src="./img/productivity.jpg" alt="Project 3" />
-          <h3>Productivity app</h3>
-          <p>Description of project 3</p>
+          <a href="index.html" class="logo">
+            <img class="logo" src="img/logo.svg" alt="logo" /></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#contact" onclick="menuToggle()">Contact</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                  <i class="fas fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </main>
-
-    <footer id="contact">
+    </header>
+    <div id="hero">
       <div class="container"></div>
-      <h4>Contact</h4>
-      <a href="#" class=".button:call">9284329036</a>
-      <a href="9284329036" class=".button:email">Send me an email</a>
-      <p>&copy; 2024 by Brooke Ward</p>
-    </footer>
-    <div>
-      <svg enable-background="new 0 0 48 48" id="Layer_1" version="1.1" viewBox="0 0 48 48" xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <circle cx="24" cy="24" fill="#1CB7EB" r="24" />
-        <g>
-          <g>
-            <path
-              d="M36.8,15.4c-0.9,0.5-2,0.8-3,0.9c1.1-0.7,1.9-1.8,2.3-3.1c-1,0.6-2.1,1.1-3.4,1.4c-1-1.1-2.3-1.8-3.8-1.8    c-2.9,0-5.3,2.5-5.3,5.7c0,0.4,0,0.9,0.1,1.3c-4.4-0.2-8.3-2.5-10.9-5.9c-0.5,0.8-0.7,1.8-0.7,2.9c0,2,0.9,3.7,2.3,4.7    c-0.9,0-1.7-0.3-2.4-0.7c0,0,0,0.1,0,0.1c0,2.7,1.8,5,4.2,5.6c-0.4,0.1-0.9,0.2-1.4,0.2c-0.3,0-0.7,0-1-0.1    c0.7,2.3,2.6,3.9,4.9,3.9c-1.8,1.5-4.1,2.4-6.5,2.4c-0.4,0-0.8,0-1.3-0.1c2.3,1.6,5.1,2.6,8.1,2.6c9.7,0,15-8.6,15-16.1    c0-0.2,-0.5,0-0.7C305.2,17.6,36.1,16.6,36.8,15.4z"
-              fill="#FFFFFF" />
-          </g>
-        </g>
-      </svg>
-    </div>
-    <div>
-      <svg data-name="1-facebook" id="_1-facebook" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: #385997;
-            }
-
-            .cls-2 {
-              fill: #fff;
-            }
-          </style>
-        </defs>
-        <title />
-        <rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64" />
-        <path class="cls-2"
-          d="M54.4,29.6h-10V22c0-1.86,2.14-2,2.8-2H54V9.6H47.2C39.67,9.6,34,14.93,34,22v7.6H25.6V40H34V64H44.4V40h8.4Z" />
-      </svg>
-    </div>
-    <div>
-      <svg id="Apple" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <style>
-            .cls-1 {
-              fill: url(#Nepojmenovaný_přechod_27);
-            }
-
-            .cls-2 {
-              fill: #fff;
-            }
-          </style>
-        </defs>
-        <title />
-        <rect class="cls-1" height="465.06" rx="107.23" ry="107.23" width="465.06" x="23.47" y="23.47" />
-        <path class="cls-2"
-          d="M331,115.22a66.92,66.92,0,0,1,66.65,66.65V330.13A66.92,66.92,0,0,1,331,396.78H181a66.92,66.92,0,0,1-66.65-66.65V181.87A66.92,66.92,0,0,1,181,115.22H331m0-31H181c-53.71,0-97.66,44-97.66,97.66V330.13c0,53.71,44,97.66,97.66,97.66H331c53.71,0,97.66-44,97.66-97.66V181.87c0-53.71-43.95-97.66-97.66-97.66Z" />
-        <path class="cls-2"
-          d="M256,198.13A57.87,57.87,0,1,1,198.13,256,57.94,57.94,0,0,1,256,198.13m0-31A88.87,88.87,0,1,0,344.87,256,88.87,88.87,0,0,0,256,167.13Z" />
-        <circle class="cls-2" cx="346.81" cy="163.23" r="21.07" />
-      </svg>
+      <h1>Hi, my name is Brooke Ward.<span>
+          I'm a UX/UI researcher and designer</span>
+      </h1>
+      <p>I have a passion for design! I love watching an idea go from paper sketches, all the way to polished
+        mockups!
+      </p>
     </div>
 
-    <div class=""> </div>
+    <div id="projects">
+      <!-- START PROJECT BLOCK EXERCISE 1.3 -->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="./img/branding-money-saving.png" alt="Project 1" />
+        </div>
+        <div class="col-md-6">
+          <div class="description">
+            <h3>Wealth Wave</h3>
+            <p>WEALTHWAVE is a money saving tool that will allow
+              you to save money easily and faster. I was responsible
+              for both the UX and UI design on this project. I created paper sketches, and used figma to bring them
+              to
+              life.
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="project">
+        <!-- START PROJECT BLOCK EXERCISE 1.3 -->
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./img/location-based-nav.png" alt="Project 2" />
+          </div>
+          <div class="col-md-6">
+            <div class="description">
+              <h3>Navigational app</h3>
+              <p>a responsive web app that allows users to find desired location more efficently </p>
+            </div>
+          </div>
+
+          <div class="project">
+            <!-- START PROJECT BLOCK EXERCISE 1.3 -->
+            <div class="row">
+              <div class="col-md-6">
+                <img src="./img/productivity.jpg" alt="Project 3" />
+              </div>
+              <div class="col-md-6">
+                <div class="description">
+                  <h3>Productivity app</h3>
+                  <p>an app that helps users be more productive and keep track of everyday tasks </p>
+                </div>
+              </div>
+
+
+              <footer id="contact">
+                <div class="container"></div>
+                <h4>Contact</h4>
+                <a href="#" class=".button:call">9284329036</a>
+                <a href="9284329036" class=".button:email">Send me an email</a>
+                <p>&copy; 2024 by Brooke Ward</p>
+              </footer>
+              <div>
+                <svg enable-background="new 0 0 48 48" id="Layer_1" version="1.1" viewBox="0 0 48 48"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <circle cx="24" cy="24" fill="#1CB7EB" r="24" />
+                  <g>
+                    <g>
+                      <path
+                        d="M36.8,15.4c-0.9,0.5-2,0.8-3,0.9c1.1-0.7,1.9-1.8,2.3-3.1c-1,0.6-2.1,1.1-3.4,1.4c-1-1.1-2.3-1.8-3.8-1.8    c-2.9,0-5.3,2.5-5.3,5.7c0,0.4,0,0.9,0.1,1.3c-4.4-0.2-8.3-2.5-10.9-5.9c-0.5,0.8-0.7,1.8-0.7,2.9c0,2,0.9,3.7,2.3,4.7    c-0.9,0-1.7-0.3-2.4-0.7c0,0,0,0.1,0,0.1c0,2.7,1.8,5,4.2,5.6c-0.4,0.1-0.9,0.2-1.4,0.2c-0.3,0-0.7,0-1-0.1    c0.7,2.3,2.6,3.9,4.9,3.9c-1.8,1.5-4.1,2.4-6.5,2.4c-0.4,0-0.8,0-1.3-0.1c2.3,1.6,5.1,2.6,8.1,2.6c9.7,0,15-8.6,15-16.1    c0-0.2,-0.5,0-0.7C305.2,17.6,36.1,16.6,36.8,15.4z"
+                        fill="#FFFFFF" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <svg data-name="1-facebook" id="_1-facebook" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #385997;
+                      }
+
+                      .cls-2 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <title />
+                  <rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64" />
+                  <path class="cls-2"
+                    d="M54.4,29.6h-10V22c0-1.86,2.14-2,2.8-2H54V9.6H47.2C39.67,9.6,34,14.93,34,22v7.6H25.6V40H34V64H44.4V40h8.4Z" />
+                </svg>
+              </div>
+              <div>
+                <svg id="Apple" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: url(#Nepojmenovaný_přechod_27);
+                      }
+
+                      .cls-2 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <title />
+                  <rect class="cls-1" height="465.06" rx="107.23" ry="107.23" width="465.06" x="23.47" y="23.47" />
+                  <path class="cls-2"
+                    d="M331,115.22a66.92,66.92,0,0,1,66.65,66.65V330.13A66.92,66.92,0,0,1,331,396.78H181a66.92,66.92,0,0,1-66.65-66.65V181.87A66.92,66.92,0,0,1,181,115.22H331m0-31H181c-53.71,0-97.66,44-97.66,97.66V330.13c0,53.71,44,97.66,97.66,97.66H331c53.71,0,97.66-44,97.66-97.66V181.87c0-53.71-43.95-97.66-97.66-97.66Z" />
+                  <path class="cls-2"
+                    d="M256,198.13A57.87,57.87,0,1,1,198.13,256,57.94,57.94,0,0,1,256,198.13m0-31A88.87,88.87,0,1,0,344.87,256,88.87,88.87,0,0,0,256,167.13Z" />
+                  <circle class="cls-2" cx="346.81" cy="163.23" r="21.07" />
+                </svg>
+              </div>
 </body>
 
 </html>
