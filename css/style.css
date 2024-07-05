@@ -15,8 +15,8 @@ header {
 }
 
 .css-box-shadow {
-  background: #F8F8F8;
-  border: solid #BDBDBD 1px;
+  background: #f8f8f8;
+  border: solid #bdbdbd 1px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -53,43 +53,40 @@ body {
 }
 
 h1 {
-  font-size: 2em
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1.5em
+  font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.2em
+  font-size: 1.2em;
 }
 
 ul,
 ol {
   margin: 1em 0;
-  padding-left: 40px
+  padding-left: 40px;
 }
 
 p,
 figure {
-  margin: 1em 0
+  margin: 1em 0;
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 a img {
-  border: none
+  border: none;
 }
 
 sup,
 sub {
-  line-height: 0
+  line-height: 0;
 }
-
-
-
 
 .button {
   display: inline-block;
@@ -123,86 +120,94 @@ sub {
   padding: 0 10px;
 }
 
+#hero {
+  margin: 50px auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {}
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  body {
+    background-color: #f8f4f4;
+    font-family: "open sans";
+    font-size: 16px;
+    /* Sets the font size to 16px */
+    font-weight: 300;
+    /* Sets the font weight to 300 */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 * the font-size */
+    color: #050404;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+
+  .navtoggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-body {
-  background-color: #f8f4f4;
-  font-family: "open sans";
-  font-size: 16px;
-  /* Sets the font size to 16px */
-  font-weight: 300;
-  /* Sets the font weight to 300 */
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #050404;
-}
-
-#hero span {
-  display: block;
-}
-
-#about-page h3 {
-  margin-top: 0;
-}
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: center;
+    padding: 20px 0 13px;
+  }
 
-header {
-  text-align: center;
-  padding: 20px 0 13px;
-}
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
+  .col-md-6 {
+    width: 50%;
+  }
 
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
+  body {
+    background-color: #f8f4f4;
+    font-family: "open sans";
+    font-size: 18px;
+    /* Sets the font size to 16px */
+    font-weight: 400;
+    /* Sets the font weight to 300 */
+    line-height: 1.8;
+    /* Sets the line-height to 1.6 * the font-size */
+    color: #050404;
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  #hero span {
+    display: block;
+  }
 
-body {
-  background-color: #f8f4f4;
-  font-family: "open sans";
-  font-size: 18px;
-  /* Sets the font size to 16px */
-  font-weight: 400;
-  /* Sets the font weight to 300 */
-  line-height: 1.8;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #050404;
-}
-
-#hero span {
-  display: block;
-}
-
-#about-page h3 {
-  margin-top: 0;
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
 /* ==============================
@@ -231,7 +236,6 @@ Extra-large devices (1920px or larger)
   clear: both;
   display: table;
 }
-
 
 @keyframes color-change {
   from {
@@ -273,4 +277,12 @@ Extra-large devices (1920px or larger)
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.maxWidth {
+  max-width: 800px;
+}
+
+.social-icons svg {
+  width: 50px;
 }
