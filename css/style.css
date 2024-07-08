@@ -1,7 +1,7 @@
 header {
   position: relative;
   background-color: #f6f3ee;
-  padding: 10px;
+  padding: 10px 0 4px;
   margin: 10px;
   padding-top: 99px;
   padding-right: 5px;
@@ -10,8 +10,31 @@ header {
   text-align: center;
 }
 
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+main {
+  padding-top: 56px;
+}
+
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .css-box-shadow {
@@ -22,16 +45,13 @@ header {
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
+
 nav>ul {
-  display: inline-block;
-  width: 100%;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -133,6 +153,22 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   nav {
     width: auto;
     float: right;
@@ -175,7 +211,6 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   header {
-    text-align: center;
     padding: 20px 0 13px;
   }
 
