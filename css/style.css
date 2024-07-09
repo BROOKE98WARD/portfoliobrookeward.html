@@ -10,22 +10,48 @@ header {
   text-align: center;
 }
 
+nav>ul>li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li>a {
+  display: inline-block;
+  padding: 0 15px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+/* hamburger menu */
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -46,19 +72,6 @@ main {
 }
 
 
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-}
 
 body {
   background-color: #f8f4f4;
@@ -144,21 +157,22 @@ sub {
   margin: 50px auto;
 }
 
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
+/* === Medium Devices (641px and larger) === */
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
-  nav>ul {
-    margin: 1em 0;
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
   }
 
   nav>ul>li {
     display: inline-block;
+    position: relative;
   }
 
   .navtoggle li:not(:last-child) {
@@ -167,12 +181,6 @@ Medium devices (640px and larger)
 
   .navtoggle li:last-child {
     display: none;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
   }
 
   .col-md-6 {
@@ -224,6 +232,14 @@ Large devices (1024px or larger)
     width: 50%;
   }
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   body {
     background-color: #f8f4f4;
     font-family: "open sans";
@@ -250,6 +266,14 @@ X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
 
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
@@ -264,6 +288,14 @@ Extra-large devices (1920px or larger)
 [class*="col-"] {
   float: left;
   /* padding:  */
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
 }
 
 .row::after {
